@@ -1,0 +1,1131 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+
+@font-face {
+	font-family: BanglaFonts;
+	src:url(Shadhin.ttf),
+	url(Shadhin.eot)/* IE9 */
+}
+
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: none;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 96%;
+	padding-left: 1%;
+	padding-right: 1%;
+	clear: none;
+	float: none;
+}
+.Header {
+	
+	-webkit-box-shadow: 0px 2px 5px #6E6535;
+	box-shadow: 0px 2px 5px #6E6535;
+	margin-top: 5px;
+	border-radius: 6px 6px 5px 5px;
+	background-color: #f97b5f;
+	border-bottom: 5px solid #9f2a0f;
+}
+.generalLogo {
+	width: 98%;
+	margin-left: 1%;
+	margin-top: 3%;
+}
+.Footer {
+	
+	margin-top: 20px;
+	background-color: #2B2B2B;
+	
+	
+}
+.footerInfo1 {
+	width: 95%;
+	color: #BFBFBF;
+	font-weight: normal;
+	text-align: left;
+	font-size: 14px;
+	padding-top: 25px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	padding-left: 2%;
+}
+.footerInfo2 {
+	
+	
+	
+	color: #BFBFBF;
+	font-weight: normal;
+	text-align: left;
+	font-size: 15px;
+	padding-top: 18px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	padding-left: 1%;
+}
+.footerInfo3 {
+	
+	
+	
+	color: #D4D4D4;
+	font-weight: normal;
+	text-align: left;
+	font-size: 18px;
+	padding-top: 11px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	padding-left: 1%;
+	height: auto;
+}
+.LinksFooter a {
+	text-decoration: none;
+	color: #959595;
+}
+.LinksFooter a:hover {
+	color:#EE792A;
+}
+.AboutUsText {
+	margin-top: 20px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 22px;
+	text-align: left;
+	color: #003333;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #003333;
+}
+.aboutusInfo {
+	
+	
+	margin-top: 20px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	text-align: justify;
+}
+.textBangla {
+	
+	
+	margin-top: 30px;
+	text-align: justify;
+	padding-top: 10px;
+	border-top: 1px dotted #939393;
+}
+.editInfo0 {
+	
+	
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	text-align: left;
+	margin-top: 25px;
+	
+	
+	
+	padding-top: 5px;
+	
+}
+.editInfo02 {
+	
+	
+	
+	margin-top: 10px;
+	
+	
+	
+	
+	
+}
+.editInfo {
+	
+	
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	text-align: left;
+	margin-top: 40px;
+	
+	
+	
+	padding-top: 5px;
+	
+}
+.editInfo2 {
+
+	
+	
+	margin-top: 30px;
+	
+	padding-top: 5px;
+	
+	
+	
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 96%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+	padding-left: 0.3px;
+	padding-right: 0.3px;
+	background-color: #FFFFFF;
+}
+.Header {
+	height: 140px;
+	-webkit-box-shadow: 0px 2px 5px #6E6535;
+	box-shadow: 0px 2px 5px #6E6535;
+	margin-top: 5px;
+	border-radius: 6px 6px 5px 5px;
+	background-color: #f97b5f;
+	border-bottom: 5px solid #9f2a0f;
+}
+.Container {
+	padding-bottom: 25px;
+	padding-top: 10px;
+
+
+}
+.Footer {
+	height: 135px;
+	margin-top: 15px;
+	background-color: #2B2B2B;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(64,64,64,1.00)),color-stop( 100% , rgba(43,43,43,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(64,64,64,1.00) 0%,rgba(43,43,43,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(64,64,64,1.00) 0%,rgba(43,43,43,1.00) 100%);
+}
+.row_01 {
+	width: 23%;
+	margin-left: 7%;
+	clear: none;
+	background-color: #efc487;
+	margin-top: 28px;
+	height: 500px;
+	border: 6px solid #efc487;
+	border-radius: 7px;
+}
+.row_01 img:hover {
+	opacity:.9;
+}
+.footerInfo1 {
+	width: 26%;
+	margin-left: 3%;
+	clear: none;
+	color: #BFBFBF;
+	font-weight: normal;
+	text-align: left;
+	font-size: 14px;
+	padding-top: 50px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	padding-left: 2%;
+}
+.footerInfo2 {
+	width: 32%;
+	margin-left: 7%;
+	clear: none;
+	color: #BFBFBF;
+	font-weight: normal;
+	text-align: left;
+	font-size: 16px;
+	padding-top: 18px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	padding-left: 1%;
+}
+.footerInfo3 {
+	width: 17%;
+	margin-left: 7%;
+	clear: none;
+	color: #D4D4D4;
+	font-weight: normal;
+	text-align: left;
+	font-size: 19px;
+	padding-top: 11px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	padding-left: 1%;
+	height: auto;
+}
+.mag_01_details {
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 5px;
+	color: #232d28;
+	font-size: 19px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+.logoCtainer {
+	padding-top: 12px;
+	border-top: 1px dotted #7E7E7E;
+	margin-top: 7px;
+	width: 85%;
+	height: auto;
+}
+.social_01 {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	border: none;
+	width: 100%;
+	height: 65px;
+}
+.social_01 li {
+	float:left;
+	border:none;
+	padding:0;
+	margin:0 0 0 10px;
+	list-style-type:none;
+}
+.social_01 img {
+	opacity:.7;
+}
+.social_01 img:hover {
+	opacity:.999;
+}
+.social_01 li a {
+	text-decoration:none;
+	float:left;
+	position:relative;
+}
+.social_01 li a:hover {
+	color: #323232;
+}
+.LinksFooter {
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #7E7E7E;
+	width: 200px;
+}
+.LinksFooter a {
+	text-decoration: none;
+	color: #959595;
+}
+.LinksFooter a:hover {
+	color:#EE792A;
+}
+.MagnameDetails {
+	font-size: 18px;
+	color: #373d20;
+}
+.generalLogo {
+	width: 75%;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+.aboutUsContainer1 {
+	width: 30%;
+	clear: none;
+	background-color: #D1D1D1;
+	border-radius: 3px;
+	padding-right: 15px;
+	margin-left: 15px;
+	margin-top: 25px;
+	padding-bottom: 25px;
+	height: 855px;
+}
+.aboutUsContainer2 {
+	width: 63%;
+	margin-left: 0.6%;
+	clear: none;
+	height: 800px;
+	margin-top: 25px;
+	border-radius: 7px;
+}
+.aboutUsContainer3 {
+	width: 15%;
+	margin-left: 1.6949%;
+	clear: none;
+	height: 500px;
+	margin-top: 45px;
+}
+.editInfo {
+	width: 32%;
+	margin-left: 55px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	text-align: left;
+	margin-top: 4%;
+	border-right: 1px solid #A8A8A8;
+	padding-right: 35px;
+	height: 150px;
+	padding-top: 5px;
+	float: left;
+}
+.editInfo2 {
+	width: 30%;
+	margin-left: 0px;
+	padding-left: 30px;
+	margin-top: 4%;
+	height: 150px;
+	padding-top: 5px;
+	float: right;
+	clear: none;
+	margin-right: 25px;
+}
+.editInfo0 {
+	width: 32%;
+	margin-left: 55px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	text-align: left;
+	margin-top: 4%;
+	border-right: 1px solid #A8A8A8;
+	padding-right: 35px;
+	height: 180px;
+	padding-top: 5px;
+	float: left;
+}
+.editInfo02 {
+	width: 32%;
+	margin-left: 0px;
+	padding-left: 30px;
+	margin-top: 4%;
+	height: 140px;
+	padding-top: 5px;
+	float: right;
+	clear: none;
+	margin-right: 17px;
+}
+.AboutUsText {
+	width: 84%;
+	margin-left: 25px;
+	margin-top: 40px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 24px;
+	text-align: left;
+	color: #003333;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #003333;
+}
+.aboutusInfo {
+	width: 84%;
+	margin-left: 25px;
+	margin-top: 20px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	text-align: justify;
+}
+.textBangla {
+	width: 84%;
+	margin-left: 25px;
+	margin-top: 40px;
+	text-align: justify;
+	padding-top: 20px;
+	border-top: 1px dotted #939393;
+}
+.editorInforCtainer {
+	background-color: #D1D1D1;
+	width: 96%;
+	border-radius: 4px;
+	height: 204px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	margin-top: 15px;
+}
+.individualEditorInfo {
+	margin-top: 15px;
+	height: 635px;
+	background-color: #D1D1D1;
+	border-radius: 4px;
+	padding-right: 15px;
+	width: 97%;
+}
+.exeEditorInfo {
+	margin-left: 0px;
+	width: 96%;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	padding-right: 20px;
+	background-color: #D1D1D1;
+	border-radius: 7px;
+	padding-bottom: 20px;
+	height: 626px;
+}
+.exeEditorInfo2 {
+	margin-left: 0px;
+	width: 35%;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	margin-top: 15px;
+	clear: none;
+	float: right;
+	margin-right: 0px;
+}
+.div01 {
+}
+.div2 {
+	margin-top: 10px;
+}
+.div3 {
+	margin-top: 20px;
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 780px) {
+
+.gridContainer {
+	width: 96%;
+	max-width: 1100px;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+	padding-left: 0.3px;
+	padding-right: 0.3px;
+	background-color: #FFFFFF;
+}
+.Header {
+	height: 140px;
+	-webkit-box-shadow: 0px 2px 5px #6E6535;
+	box-shadow: 0px 2px 5px #6E6535;
+	margin-top: 5px;
+	border-radius: 6px 6px 5px 5px;
+	background-color: #f97b5f;
+	border-bottom: 5px solid #9f2a0f;
+}
+.Container {
+	padding-bottom: 25px;
+	padding-top: 10px;
+
+
+}
+.Footer {
+	height: 135px;
+	margin-top: 15px;
+	background-color: #2B2B2B;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(64,64,64,1.00)),color-stop( 100% , rgba(43,43,43,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(64,64,64,1.00) 0%,rgba(43,43,43,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(64,64,64,1.00) 0%,rgba(43,43,43,1.00) 100%);
+}
+.row_01 {
+	width: 23%;
+	margin-left: 7%;
+	clear: none;
+	background-color: #efc487;
+	margin-top: 28px;
+	height: 500px;
+	border: 6px solid #efc487;
+	border-radius: 7px;
+}
+.row_01 img:hover {
+	opacity:.9;
+}
+.footerInfo1 {
+	width: 26%;
+	margin-left: 3%;
+	clear: none;
+	color: #BFBFBF;
+	font-weight: normal;
+	text-align: left;
+	font-size: 15px;
+	padding-top: 50px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	padding-left: 2%;
+}
+.footerInfo2 {
+	width: 32%;
+	margin-left: 6%;
+	clear: none;
+	color: #BFBFBF;
+	font-weight: normal;
+	text-align: left;
+	font-size: 17px;
+	padding-top: 18px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	padding-left: 1%;
+}
+.footerInfo3 {
+	width: 15%;
+	margin-left: 11%;
+	clear: none;
+	color: #D4D4D4;
+	font-weight: normal;
+	text-align: left;
+	font-size: 20px;
+	padding-top: 11px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	padding-left: 1%;
+	height: auto;
+}
+.mag_01_details {
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 5px;
+	color: #232d28;
+	font-size: 19px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+.logoCtainer {
+	padding-top: 12px;
+	border-top: 1px dotted #7E7E7E;
+	margin-top: 7px;
+	width: 85%;
+	height: auto;
+}
+.social_01 {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	border: none;
+	width: 100%;
+	height: 65px;
+}
+.social_01 li {
+	float:left;
+	border:none;
+	padding:0;
+	margin:0 0 0 10px;
+	list-style-type:none;
+}
+.social_01 img {
+	opacity:.7;
+}
+.social_01 img:hover {
+	opacity:.999;
+}
+.social_01 li a {
+	text-decoration:none;
+	float:left;
+	position:relative;
+}
+.social_01 li a:hover {
+	color: #323232;
+}
+.LinksFooter {
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #7E7E7E;
+	width: 300px;
+}
+.LinksFooter a {
+	text-decoration: none;
+	color: #959595;
+}
+.LinksFooter a:hover {
+	color:#EE792A;
+}
+.MagnameDetails {
+	font-size: 18px;
+	color: #373d20;
+}
+.generalLogo {
+	width: 75%;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+.aboutUsContainer1 {
+	width: 30%;
+	clear: none;
+	background-color: #D1D1D1;
+	border-radius: 3px;
+	padding-right: 15px;
+	margin-left: 20px;
+	margin-top: 25px;
+	padding-bottom: 25px;
+	height: 776px;
+}
+.aboutUsContainer2 {
+	width: 63%;
+	margin-left: 0.6%;
+	clear: none;
+	height: 800px;
+	margin-top: 25px;
+	border-radius: 7px;
+}
+.aboutUsContainer3 {
+	width: 15%;
+	margin-left: 1.6949%;
+	clear: none;
+	height: 500px;
+	margin-top: 45px;
+}
+.editInfo {
+	width: 36%;
+	margin-left: 55px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	text-align: left;
+	margin-top: 4%;
+	border-right: 1px solid #A8A8A8;
+	padding-right: 35px;
+	height: 150px;
+	padding-top: 5px;
+	float: left;
+}
+.editInfo2 {
+	width: 30%;
+	margin-left: 0px;
+	padding-left: 30px;
+	margin-top: 4%;
+	height: 150px;
+	padding-top: 5px;
+	float: right;
+	clear: none;
+	margin-right: 25px;
+}
+.editInfo0 {
+	width: 36%;
+	margin-left: 55px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	text-align: left;
+	margin-top: 4%;
+	border-right: 1px solid #A8A8A8;
+	padding-right: 35px;
+	height: 140px;
+	padding-top: 5px;
+	float: left;
+}
+.editInfo02 {
+	width: 32%;
+	margin-left: 0px;
+	padding-left: 30px;
+	margin-top: 4%;
+	height: 140px;
+	padding-top: 5px;
+	float: right;
+	clear: none;
+	margin-right: 17px;
+}
+.AboutUsText {
+	width: 84%;
+	margin-left: 25px;
+	margin-top: 40px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 24px;
+	text-align: left;
+	color: #003333;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #003333;
+}
+.aboutusInfo {
+	width: 84%;
+	margin-left: 25px;
+	margin-top: 20px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	text-align: justify;
+}
+.textBangla {
+	width: 84%;
+	margin-left: 25px;
+	margin-top: 40px;
+	text-align: justify;
+	padding-top: 20px;
+	border-top: 1px dotted #939393;
+}
+.editorInforCtainer {
+	background-color: #D1D1D1;
+	width: 97%;
+	border-radius: 4px;
+	height: 191px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	margin-top: 15px;
+}
+.individualEditorInfo {
+	margin-top: 15px;
+	height: 635px;
+	background-color: #D1D1D1;
+	border-radius: 4px;
+	padding-right: 15px;
+	width: 97%;
+}
+.exeEditorInfo {
+	margin-left: 0px;
+	width: 97%;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	padding-right: 20px;
+	background-color: #D1D1D1;
+	border-radius: 7px;
+	padding-bottom: 20px;
+	height: 560px;
+}
+.exeEditorInfo2 {
+	margin-left: 0px;
+	width: 35%;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	margin-top: 15px;
+	clear: none;
+	float: right;
+	margin-right: 0px;
+}
+.div01 {
+}
+.div2 {
+	margin-top: 10px;
+}
+.div3 {
+	margin-top: 20px;
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}
+
+@media only screen and (min-width: 1101px) {
+
+.gridContainer {
+	width: 96%;
+	max-width: 1420px;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+	padding-left: 0.3px;
+	padding-right: 0.3px;
+	background-color: #FFFFFF;
+}
+.Header {
+	height: 140px;
+	-webkit-box-shadow: 0px 2px 5px #6E6535;
+	box-shadow: 0px 2px 5px #6E6535;
+	margin-top: 5px;
+	border-radius: 6px 6px 5px 5px;
+	background-color: #f97b5f;
+	border-bottom: 5px solid #9f2a0f;
+}
+.Container {
+	padding-bottom: 25px;
+	padding-top: 10px;
+
+
+}
+.Footer {
+	height: 135px;
+	margin-top: 15px;
+	background-color: #2B2B2B;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(64,64,64,1.00)),color-stop( 100% , rgba(43,43,43,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(64,64,64,1.00) 0%,rgba(43,43,43,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(64,64,64,1.00) 0%,rgba(43,43,43,1.00) 100%);
+}
+.row_01 {
+	width: 23%;
+	margin-left: 7%;
+	clear: none;
+	background-color: #efc487;
+	margin-top: 28px;
+	height: 500px;
+	border: 6px solid #efc487;
+	border-radius: 7px;
+}
+.row_01 img:hover {
+	opacity:.9;
+}
+.footerInfo1 {
+	width: 30%;
+	margin-left: 3%;
+	clear: none;
+	color: #BFBFBF;
+	font-weight: normal;
+	text-align: left;
+	font-size: 15px;
+	padding-top: 50px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	padding-left: 2%;
+}
+.footerInfo2 {
+	width: 29%;
+	margin-left: 7%;
+	clear: none;
+	color: #BFBFBF;
+	font-weight: normal;
+	text-align: left;
+	font-size: 17px;
+	padding-top: 18px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	padding-left: 1%;
+}
+.footerInfo3 {
+	width: 14%;
+	margin-left: 8%;
+	clear: none;
+	color: #D4D4D4;
+	font-weight: normal;
+	text-align: left;
+	font-size: 20px;
+	padding-top: 11px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	padding-left: 1%;
+	height: auto;
+}
+.mag_01_details {
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 5px;
+	color: #232d28;
+	font-size: 19px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+.logoCtainer {
+	padding-top: 12px;
+	border-top: 1px dotted #7E7E7E;
+	margin-top: 7px;
+	width: 95%;
+	height: auto;
+}
+.social_01 {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	border: none;
+	width: 100%;
+	height: 65px;
+}
+.social_01 li {
+	float:left;
+	border:none;
+	padding:0;
+	margin:0 0 0 10px;
+	list-style-type:none;
+}
+.social_01 img {
+	opacity:.7;
+}
+.social_01 img:hover {
+	opacity:.999;
+}
+.social_01 li a {
+	text-decoration:none;
+	float:left;
+	position:relative;
+}
+.social_01 li a:hover {
+	color: #323232;
+}
+.LinksFooter {
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #7E7E7E;
+	width: 300px;
+}
+.LinksFooter a {
+	text-decoration: none;
+	color: #959595;
+}
+.LinksFooter a:hover {
+	color:#EE792A;
+}
+.MagnameDetails {
+	font-size: 18px;
+	color: #373d20;
+}
+.generalLogo {
+	width: 75%;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+.aboutUsContainer1 {
+	width: 30%;
+	clear: none;
+	background-color: #D1D1D1;
+	border-radius: 3px;
+	padding-right: 15px;
+	margin-left: 25px;
+	margin-top: 25px;
+	padding-bottom: 25px;
+	height: 776px;
+}
+.aboutUsContainer2 {
+	width: 63%;
+	margin-left: 0.6%;
+	clear: none;
+	height: 800px;
+	margin-top: 25px;
+	border-radius: 7px;
+}
+.aboutUsContainer3 {
+	width: 15%;
+	margin-left: 1.6949%;
+	clear: none;
+	height: 500px;
+	margin-top: 45px;
+}
+.editInfo {
+	width: 39%;
+	margin-left: 55px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	text-align: left;
+	margin-top: 4%;
+	border-right: 1px solid #A8A8A8;
+	padding-right: 35px;
+	height: 150px;
+	padding-top: 5px;
+	float: left;
+}
+.editInfo2 {
+	width: 30%;
+	margin-left: 0px;
+	padding-left: 30px;
+	margin-top: 4%;
+	height: 150px;
+	padding-top: 5px;
+	float: right;
+	clear: none;
+	margin-right: 25px;
+}
+.editInfo0 {
+	width: 39%;
+	margin-left: 55px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	text-align: left;
+	margin-top: 4%;
+	border-right: 1px solid #A8A8A8;
+	padding-right: 35px;
+	height: 140px;
+	padding-top: 5px;
+	float: left;
+}
+.editInfo02 {
+	width: 32%;
+	margin-left: 0px;
+	padding-left: 30px;
+	margin-top: 4%;
+	height: 140px;
+	padding-top: 5px;
+	float: right;
+	clear: none;
+	margin-right: 17px;
+}
+.AboutUsText {
+	width: 84%;
+	margin-left: 25px;
+	margin-top: 40px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 24px;
+	text-align: left;
+	color: #003333;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #003333;
+}
+.aboutusInfo {
+	width: 84%;
+	margin-left: 25px;
+	margin-top: 20px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	text-align: justify;
+}
+.textBangla {
+	width: 84%;
+	margin-left: 25px;
+	margin-top: 40px;
+	text-align: justify;
+	padding-top: 20px;
+	border-top: 1px dotted #939393;
+}
+.editorInforCtainer {
+	background-color: #D1D1D1;
+	width: 99%;
+	border-radius: 4px;
+	height: 191px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	margin-top: 15px;
+}
+.individualEditorInfo {
+	margin-top: 15px;
+	height: 635px;
+	background-color: #D1D1D1;
+	border-radius: 4px;
+	padding-right: 15px;
+	width: 97%;
+}
+.exeEditorInfo {
+	margin-left: 0px;
+	width: 99%;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	padding-right: 20px;
+	background-color: #D1D1D1;
+	border-radius: 7px;
+	padding-bottom: 20px;
+	height: 560px;
+}
+.exeEditorInfo2 {
+	margin-left: 0px;
+	width: 35%;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 16px;
+	margin-top: 15px;
+	clear: none;
+	float: right;
+	margin-right: 0px;
+}
+.div01 {
+}
+.div2 {
+	margin-top: 10px;
+}
+.div3 {
+	margin-top: 20px;
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}
